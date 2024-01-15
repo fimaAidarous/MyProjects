@@ -1,0 +1,152 @@
+201 created
+ count: book.length,
+        data:books(object weye)
+
+{
+    "title":"Asma",
+    "author":"Layla",
+    "publisherYear":2013
+}
+CRA 
+create react app
+npm create vite@latest
+frontend
+cd frontend
+npm i
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+
+in the tailwind.config above the theme weite  [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  and also cpy @tailwind base;
+@tailwind components;
+@tailwind utilities; and write in the index.css
+
+in the app.jsx write rafce(this extension es7+ allow you to use rafce)
+npm i react-router-dom
+
+npm i axios react-icons
+cd ..
+cd backend
+shift+alt+f
+npm i notistack
+
+…or create a new repository on the command line
+echo "# MyProjects" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/fimaAidarous/MyProjects.git
+git push -u origin main
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/fimaAidarous/MyProjects.git
+git branch -M main
+git push -u origin main
+
+</div>
+      {loading ? (
+        <Spinner />
+      ) : showType === 'table' ? 
+        // <table className="w-full border-separate border-spacing-2">
+        //   <thead>
+        //     <tr>
+        //       <th className="border border-slate-600 rounded-md"> No</th>
+        //       <th className="border border-slate-600 rounded-md"> Title</th>
+        //       <th className="border border-slate-600 rounded-md mx-md:hidden">
+        //         Author
+        //       </th>
+        //       <th className="border border-slate-600 rounded-md">
+        //         {" "}
+        //         PublishYear
+        //       </th>
+        //       <th className="border border-slate-600 rounded-md">
+        //         {" "}
+        //         Operations
+        //       </th>
+        //     </tr>
+        //   </thead>
+        //   <tbody>
+        //     {books?.map((book, index) => (
+        //       <tr key={book._id} className="h-8">
+        //         <td className="border border-slate-700 rounded-md text-center">
+        //           {index + 1}
+        //         </td>
+        //         <td className="border border-slate-700 rounded-md text-center">
+        //           {book.title}
+        //         </td>
+        //         <td className="border border-slate-700 rounded-md text-center max-md:hidden">
+        //           {book.author}
+        //         </td>
+        //         <td className="border border-slate-700 rounded-md text-center max-md:hidden">
+        //           {book.publisherYear}
+        //         </td>
+        //         <td className="border border-slate-700 rounded-md text-center">
+        //           <div className="flex justify-center gap-x-4">
+        //             <Link to={`/books/details/${book._id}`}>
+        //               <BsInfoCircle className="text-2xl text-green-900" />
+        //             </Link>
+        //             <Link to={`/books/edit/${book._id}`}>
+        //               <AiOutlineEdit className="text-2xl text-green-900" />
+        //             </Link>
+        //             <Link to={`/books/delete/${book._id}`}>
+        //               <MdOutlineDelete className="text-2xl text-green-900" />
+        //             </Link>
+        //           </div>
+        //         </td>
+        //       </tr>
+        //     ))}
+        //   </tbody>
+        // </table>
+       ( <BooksTable books={books} />)
+      }
+    </div>
+  );
+};
+
+above is home 
+
+  return (
+    <div className="grid sm:grid-cols-2 lg:grid">
+      {books.map((item) => (
+        // <div
+        //   key={item._id}
+        //   className="border-2 border-gray-700 rounded-lg px-4 py-2 m-4 relative hover:shadow-xl"
+        // >
+        //   <h2 className="absolute top-1 right-2 px-4 py-1 bg-red-900 rounded-lg">
+        //     {item.publisherYear}
+        //   </h2>
+        //   <h4 className="my-2 text-gray-800">{item._id}</h4>
+        // <div className="flex justify-start items-center gap-x-2">
+        //     <PiBookOpenTextLight className="text-red-300 text-2xl"/>
+        //     <h2 className="my-1">{item.title}</h2>
+        // </div>
+        // <div className="flex justify-start items-center gap-x-2">
+        //  <BiUserCircle className="text-red-300 text-2xl"/>
+        //  <h2 className="my-1">{item.author}</h2>
+        // </div>
+        // <div className="flex justify-start items-center gap-x-2 mt-4 p-4">
+        //  <Link to={'/books/details/${item._id}'}>
+        //  <BsInfoCircle className="text-2xl text-green-900 hover:text-black" />
+        // </Link>
+        // </div>
+        // <div className="flex justify-start items-center gap-x-2 mt-4 p-4">
+        //  <Link to={'/books/details/${item._id}'}>
+        //  <AiOutlineEdit className="text-2xl text-yellow-500 hover:text-black" />
+        // </Link>
+        // </div>
+        // <div className="flex justify-start items-center gap-x-2 mt-4 p-4">
+        //  <Link to={'/books/details/${item._id}'}>
+        //  <AiOutlineDelete className="text-2xl text-red-600 hover:text-black" />
+        // </Link>
+        // </div>
+        // </div>
+      ))}
+    </div>
+  );
+};
+
+export default BookCard;
